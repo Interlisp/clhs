@@ -1,3 +1,116 @@
+html {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+body {
+	color: #000000; 
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
+	font-size: 15px;
+	background: #ffffff; }
+
+	body:before, body:after {
+	height: 3px;
+	content: "";
+	position: absolute;
+	width: 50%;
+	top: 0;
+	background: transparent;
+	z-index: 2; }
+	body:before {
+	left: 0;
+	background: #9b59b6; }
+	body:after {
+	right: 0;
+	background: #e74c3c; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color: #0d151c;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.h3, h3 {
+	font-size: 19px;
+}
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #337ab7;
+}
+a:hover, a:focus {
+	color: #868585;
+}
+/* Header */
+.site-header {
+	background-color: #eceaea;
+	padding: 50px 15px 15px 15px;
+}
+@media screen and (min-width: 768px) {
+	.site-header {
+		padding: 30px 0;
+	}
+}
+.site-header .personal-info {
+	background-color: transparent;
+	display: inline-block;
+}
+@media screen and (min-width: 768px) {
+	.site-header .personal-info {
+		display: block;
+	}
+}
+.site-header .personal-info img {
+	display: block;
+	width: 120px;
+	height: auto;
+	margin-right: 20px;
+	vertical-align: top;
+	border-radius: 50%;
+	background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+	.site-header .personal-info img {
+		width: 150px;
+		margin-right: 25px;
+	}
+}
+.site-header .personal-info .infos {
+	vertical-align: top;
+	text-align: left;
+}
+.site-header .personal-info .infos p {
+	margin-bottom: 0;
+	line-height: 2.01em;
+}
+.site-header .personal-info .infos h4 {
+	font-weight: 800;
+}
+/* end Header */
+.p-info {
+	font-weight: 800;
+	font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+	.p-info {
+		font-size: 12px;
+	}
+}
+/* small screens */
+@media (max-width: 768px) {
+	nav[data-toggle="toc"] {
+		margin-bottom: 42px;
+		position: static;
+	}
+	nav[data-toggle='toc'] .nav .nav {
+		display: block;
+	}
+	/* */
+}
+
+
 /* CSS Style Sheet for Common Lisp HyperSpec, Version 7.0 */
 /* Copyright 2005 LispWorks Ltd.  All Rights Reserved.    */
 
@@ -5,4 +118,3 @@ hr { color: "#218AE7"; }
 img { border-color: "#218AE7"; }
 a:link { color: "#4C66D9" }
 a:visited { color: "#31418C" }
-
